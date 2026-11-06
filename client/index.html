@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 4 </title>
+    <style>
+      body { margin: 0; overflow: hidden; background-color: #111; }
+      #hud { position: absolute; top: 10px; left: 10px; color: white; font-family: monospace; z-index: 10; }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas"></canvas>
+    
+    <div id="hud"></div>
+    <div id="lobby-ui" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #222; color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 10;">
+    <h1>Космічна Арена</h1>
+    <h2>Виберіть кімнату:</h2>
+    <div id="room-list">Завантаження кімнат...</div>
+  </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "name": "dogfight-game",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "shared",
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "dev:server": "npm run dev -w server",
+    "dev:client": "npm run dev -w client",
+    "test": "npm test -w shared",
+    "bench": "node shared/test/bench.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/ws": "^8.18.2",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  }
+}

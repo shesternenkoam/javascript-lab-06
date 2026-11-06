@@ -1,0 +1,13 @@
+{
+  "name": "server",
+  "type": "module",
+  "scripts": {
+    "start": "node index.ts",
+    "dev": "node --watch index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "shared": "*",
+    "ws": "^8.16.0"
+  }
+}
